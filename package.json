@@ -1,0 +1,45 @@
+{
+  "name": "WOTW",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:server": "nodemon",
+    "start:client": "webpack-dev-server",
+    "seed": "node db/seeds"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "src/*"
+    ],
+    "delay": "2500"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bulma": "^0.7.2",
+    "express": "^4.16.4",
+    "leaflet": "^1.3.4",
+    "mongod": "^2.0.0",
+    "mongoose": "^5.3.14",
+    "morgan": "^1.9.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-leaflet": "^2.1.2",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "6",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^4.0.0-beta.4",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
