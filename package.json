@@ -6,8 +6,7 @@
   "scripts": {
     "start:server": "nodemon",
     "start:client": "webpack-dev-server",
-    "seed": "node db/seeds",
-    "test": "jest"
+    "seed": "node db/seeds"
   },
   "nodemonConfig": {
     "ignore": [

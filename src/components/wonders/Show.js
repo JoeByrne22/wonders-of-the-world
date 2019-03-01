@@ -36,6 +36,7 @@ export default class WonderShow extends React.Component {
           ?
           <div className="columns is-5">
             <h1> {wonder.name}</h1>
+            <h1> {wonder.country}</h1>
             <img src={wonder.image} alt={wonder.name}/>
           </div>
           :

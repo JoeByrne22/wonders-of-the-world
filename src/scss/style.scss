@@ -14,3 +14,28 @@ img {
 .showBox {
   background-color: red;
 }
+
+.indexImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  background-color: lightblue;
+}
+
+.wonder-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  background-color: lightblue;
+  margin-bottom: 5px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

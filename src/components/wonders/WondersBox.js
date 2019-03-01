@@ -6,7 +6,8 @@ function WondersBox({ wonder }) {
     <Link to={`/wonders/${wonder._id}`}>
       <article className="wonder-box">
         <center className="indexTags">{wonder.name}</center>
-        <hr />
+        <img className="indexImage" src={wonder.image} alt={wonder.name}/>
+
       </article>
     </Link>
   );
