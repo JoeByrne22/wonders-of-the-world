@@ -7,7 +7,6 @@ function WondersBox({ wonder }) {
       <article className="wonder-box">
         <center className="indexTags">{wonder.name}</center>
         <img className="indexImage" src={wonder.image} alt={wonder.name}/>
-
       </article>
     </Link>
   );

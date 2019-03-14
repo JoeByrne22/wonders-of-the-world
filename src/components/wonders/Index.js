@@ -13,6 +13,10 @@ class WonderIndex extends React.Component {
       .then(res => this.setState({ wonders: res.data }));
   }
 
+  handleDelete() {
+    console.log('deleted');
+  }
+
   componentDidMount() {
     axios.get('/api/wonders')
       .then(result => this.setState({ wonders: result.data }));

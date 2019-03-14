@@ -11,8 +11,18 @@ img {
   height: 600px;
 }
 
-.showBox {
+.blah, .leaflet-container {
   background-color: red;
+  display: block;
+}
+
+.leaflet-container {
+  background-color: blue;
+}
+
+.map {
+  height: 100px;
+  width: 100px;
 }
 
 .indexImage {
