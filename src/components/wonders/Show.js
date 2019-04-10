@@ -35,14 +35,15 @@ export default class WonderShow extends React.Component {
         {wonder
           ?
           <div>
-            <img src={wonder.image} alt={wonder.name}/>
+            <h2 className="showImg">This is <b>{wonder.name}</b> and it is located in <b>{wonder.country}</b></h2>
+            <img className="showImg" src={wonder.image} alt={wonder.name}/>
           </div>
           :
           <p>Please wait...</p>}
-        <div className='leafet-container'>
+        <div className='leaflet-container '>
           <WonderMap wonders={[ wonder ]} userPosition={null} />
         </div>
-        <button onClick={this.handleDelete}>🗑</button>
+        <button className="deleteButton" onClick={this.handleDelete}>🗑</button>
       </section>
     );
   }

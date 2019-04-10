@@ -11,13 +11,17 @@ img {
   height: 600px;
 }
 
-.blah, .leaflet-container {
+.blah, {
   background-color: red;
   display: block;
 }
 
 .leaflet-container {
-  background-color: blue;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .map {
@@ -48,4 +52,25 @@ img {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+
+.showBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.showImg {
+  justify-content: center;
+  width: auto;
+  margin-left: 195px;
+  margin-top: 40px;
+}
+
+.deleteButton {
+  width: 20%;
+  height: 100px;
+  font-size: 40px;
+  margin-left: 40%;
+  margin-bottom: 5%;
 }

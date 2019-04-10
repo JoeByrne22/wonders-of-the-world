@@ -25,7 +25,7 @@ class WonderIndex extends React.Component {
   render() {
     return (
       <section className="section">
-        {/* <h1 className="title">All the wonders</h1> */}
+        <h1 className="title">All the wonders</h1>
         <hr />
         <div className="box-container">
           {this.state.wonders && this.state.wonders.map(
