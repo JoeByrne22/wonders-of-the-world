@@ -26,19 +26,25 @@ class WonderNew extends React.Component {
   render() {
     return (
       <section>
-        <form onSubmit={this.handleSubmit}>
-          <label>What is your Wonder?</label>
-          <input onChange={this.handleChange}
-            value={this.state.name || ''}
-            name="name"
-          />
-          <label >Add an Image: </label>
-          <input onChange={this.handleChange}
-            value={this.state.image || ''}
-            name="image"
-          />
-          <button>SUBMIT</button>
-        </form>
+        <center>
+          <form onSubmit={this.handleSubmit}>
+            <div className="formTitle">
+              <label>What is your Wonder?</label>
+              <input onChange={this.handleChange}
+                value={this.state.name || ''}
+                name="name"
+              />
+            </div>
+            <div className="formImage">
+              <label >Add an Image: </label>
+              <input onChange={this.handleChange}
+                value={this.state.image || ''}
+                name="image"
+              />
+            </div>
+            <button className="newSubmitButton">SUBMIT</button>
+          </form>
+        </center>      
       </section>
     );
   }

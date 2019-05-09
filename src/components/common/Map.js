@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const WonderMap = ({ userPosition, wonders }) => {
   console.log(wonders);
+  if(!wonders || !userPosition) return null;
   return (
     <div id='map'>
       <Map center={userPosition || wonders[0].location} zoom={14}>
